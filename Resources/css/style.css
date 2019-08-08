@@ -133,6 +133,7 @@ a:visited {
     border-bottom: 1px solid #e67e22;
     padding-bottom: 1px;
     -webkit-transition: border-bottom 0.2s, color 0.2s;
+    -o-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -155,6 +156,7 @@ input[type=submit] {
     text-decoration: none;
     border-radius: 200px;
     -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    -o-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -200,6 +202,8 @@ input[type=submit]:hover {
 
 header {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0, .7)), to(rgba(0,0,0, .7))), url(imgs/hero.jpg);
+    background-image: -webkit-linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .7)), url(imgs/hero.jpg);
+    background-image: -o-linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .7)), url(imgs/hero.jpg);
     background-image: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .7)), url(imgs/hero.jpg);
     background-size: cover;
     background-position: center;
@@ -213,6 +217,7 @@ header {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -252,6 +257,7 @@ header {
     font-size: 90%;
     border-bottom: 2px solid transparent;
     -webkit-transition: border-bottom 0.2s;
+    -o-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 
@@ -281,6 +287,7 @@ header {
     left: 0;
     width: 100%;
     background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 2px 2px #efefef;
     box-shadow: 0 2px 2px #efefef;
     z-index: 9999;
 }
@@ -346,15 +353,18 @@ header {
     width: 100%;
     height: auto;
     -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
     transform: scale(1.15);
     -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: opacity 0.5s, -webkit-transform 0.5s;
+    -o-transition: transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .meal-photo img:hover {
     -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
     transform: scale(1.03);
     opacity: 1.0;
 }
@@ -440,7 +450,9 @@ header {
 
 
 .section-testimonials {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0, .7)), to(rgba(0,0,0, .7))), url(imgs/back-customers.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(imgs/back-customers.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(imgs/back-customers.jpg);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(imgs/back-customers.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(imgs/back-customers.jpg);
     background-size: cover;
     color: #fff;
@@ -609,6 +621,7 @@ footer {
     border: none;
     color: #888;
     -webkit-transition: color 0.2s;
+    -o-transition: color 0.2s;
     transition: color 0.2s;
 }
 
@@ -626,6 +639,8 @@ footer {
 .ion-social-twitter:hover,
 .ion-social-googleplus:hover,
 .ion-social-instagram:hover {
+    -webkit-transition: color 0.2s;
+    -o-transition: color 0.2s;
     transition: color 0.2s;
 }
 
